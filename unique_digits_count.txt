@@ -1,0 +1,21 @@
+        int [] digits=new int[10];
+ 		int count=0,rem=0;
+		while(input1!=0)
+		{
+            rem=input1%10;
+			digits[rem]++;
+			input1/=10;
+		}
+		for(int i=0;i<10;i++)
+		{
+			if(digits[i]>=1)
+			{
+				count+=1;
+			}
+		}
+		return count;
+
+
+
+
+

@@ -1,0 +1,12 @@
+        int num1=Math.abs(input1),num2=Math.abs(input2),prime_count=0;
+		for(int i=num1;i<=num2;i++)
+		{
+			int flag=0;
+			for(int j=2;j<=i;j++)
+			{
+				if(i%j==0){flag+=1;}
+			}
+			if(flag==1){prime_count+=1;}
+		}
+		return prime_count;
+
